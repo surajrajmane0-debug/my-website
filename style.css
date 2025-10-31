@@ -1,4 +1,50 @@
+/* Default styles (for laptop/desktop) */
 body {
+  
+   margin: 0;
+   padding: 0;
+   text-align: center;
+ }
+ 
+ /* For tablets (screen width ≤ 1024px) */
+ @media only screen and (max-width: 1024px) {
+   body {
+     font-size: 17px;
+   }
+ 
+   img {
+     width: 80%;
+     height: auto;
+   }
+ 
+   .container {
+     width: 90%;
+     margin: auto;
+   }
+ }
+ 
+ /* For mobile phones (screen width ≤ 600px) */
+ @media only screen and (max-width: 600px) {
+   body {
+     font-size: 16px;
+   }
+ 
+   .container {
+     width: 100%;
+     padding: 10px;
+   }
+ 
+   img {
+     width: 100%;
+     height: auto;
+   }
+ 
+   nav, header, footer {
+     flex-direction: column;
+     text-align: center;
+   }
+ }
+ body {
    font-family: Arial, sans-serif;
    background-color: #f0f8ff;
    margin: 0;
